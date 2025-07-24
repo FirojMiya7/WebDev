@@ -40,7 +40,21 @@ body {
         .sign-in-btn {
             position: absolute;
             top: 30px;
-            right: 40px;
+            right: 2.5rem;
+            background: #e50914;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            z-index: 4;
+        }
+        .sign-up-btn {
+            position: absolute;
+            top: 30px;
+            right: 9.5rem;
             background: #e50914;
             color: #fff;
             border: none;

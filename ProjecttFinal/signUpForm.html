@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netflix Login validation</title>
-  <link rel="stylesheet" href="form23.css">
+  <title>Netflix Sign Up</title>
+  <link rel="stylesheet" href="signUp.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-  <script src="form.js" defer></script>
+  <script src="signUp.js" defer></script>
 
   <form id="validation" class="login-container">
-    <h1>Sign In</h1>
+    <h1>Sign Up</h1>
     <input type="text" id="username" placeholder="Email or phone number" />
 
     <div class="password-wrapper">
@@ -22,9 +22,16 @@
         <i class="fa-regular fa-eye"></i>
       </span>
     </div>
+
+    <div class="password-wrapper">
+      <input type="password" id="confirmPass" placeholder="Confirm Password" />
+      <span id="toggleEye" class="eyeIcon">
+        <i class="fa-regular fa-eye"></i>
+      </span>
+    </div>
     
     <div id="message"></div>
-    <button type="submit">Sign In</button>
+    <button type="submit">Sign Up</button>
   </form>
 
 </body>

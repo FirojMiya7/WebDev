@@ -1,64 +1,15 @@
-/* *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'segoe UI';
-}
-
-body{
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(226, 226, 218);
-}
-
-#dabba{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-#movieInput{
-    border-radius: 0.5rem;
-    border: none;
-    height: 2rem;
-    width: 13.5rem;
-    padding: 5px;
-    cursor: pointer;
-}
-
-#movieInput::placeholder{
-    font-size: 1rem;
-    padding-left: 22.5%;
-}
-
-#searchBtn{
-    border-radius: 0.5rem;
-    border: none;
-    height: 2rem;
-    width: 5.5rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: #33cd33;
-    font-size: 1rem;
-    color: white;
-} */
-
-
-
-
-
-
-/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "segeo ui"; */
+
 }
 
 body {
     background-color: #141414;
+    /* background: #000000;
+    background: linear-gradient(157deg, rgba(0, 0, 0, 1) , rgba(66, 66, 173, 1) 35%); */
     color: #fff;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     min-height: 100vh;
@@ -82,7 +33,7 @@ h1 {
 }
 
 #movieInput {
-    padding: 0.75rem 1rem;
+    padding: 0.7rem 0.9rem;
     font-size: 1rem;
     border: none;
     border-radius: 4px;
@@ -101,7 +52,7 @@ h1 {
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     background-color: #e50914;
-    color: white;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -110,44 +61,68 @@ h1 {
 
 #searchBtn:hover {
     background-color: #b00710;
+    color: white;
 }
 
 #movieContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))   */
+    grid-template-columns: repeat(5, 1fr);
     gap: 1.5rem;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1800px;
     margin-top: 2rem;
 }
 
-/* Optional card styling for fetched movie data
-.movie-card {
-    background-color: #1c1c1c;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    text-align: center;
-    transition: transform 0.2s ease;
-}
-
-.movie-card:hover {
-    transform: scale(1.03);
-}
-
-.movie-card img {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.movie-card h2 {
+.movieCard {
+    width: 100%; 
+    height: 75%;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    color: #fff;
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.1s;
+           
+    /* display:grid;
+    grid-template-rows: 300px auto; */
 }
 
-.movie-card p {
-    font-size: 0.9rem;
-    color: #aaa;
-} */
+.movieCard img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px; 
+}
+
+.movieCard:hover{
+    box-shadow: rgb(192, 6, 6) 0px 7px 14px, rgba(0, 0, 0, 0.22) 0px 5px 5px;   
+    transform: scale(1.1);
+    cursor: pointer;
+    /* transition: cubic-bezier(0.785, 0.135, 0.15, 0.86); */ 
+}
+
+h4{
+  padding:8px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
+
+p{
+  padding:8px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+}
