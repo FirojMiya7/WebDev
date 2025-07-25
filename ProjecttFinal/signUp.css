@@ -22,11 +22,15 @@ body {
   padding: 60px 68px 40px;
   border-radius: 8px;
   width: 100%;
-  max-width: 350px;
+  max-width: 435px;
   color: white;
   box-shadow: rgba(164, 129, 129, 0.442) 0px 4px 12px;
   /* opacity: 75%; */
   backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-container h1 {
@@ -36,15 +40,20 @@ body {
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  width: 18.5rem;
+  padding: 0.9rem;
+  margin: 0.5rem 0;
   background-color: #333;
   border: none;
   border-radius: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 1.3rem;
   cursor: pointer;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder{
+  font-size: 1rem;
 }
 
 button {
@@ -58,6 +67,22 @@ button {
   margin-top: 20px;
   cursor: pointer;
   font-weight: bold;
+}
+
+#loginma{
+  width: 15rem;
+  padding: 11px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover {
@@ -85,7 +110,7 @@ button:hover {
 
 .password-wrapper input {
   padding-right: 40px; /* Add space for the icon */
-  width: 100%;
+  /* width: 100%; */
   box-sizing: border-box;
 }
 
@@ -96,4 +121,12 @@ button:hover {
   transform: translatey(-50%);
   cursor: pointer;
   color: #716a6a;
+}
+
+#already{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
 }

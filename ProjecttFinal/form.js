@@ -3,6 +3,15 @@ const show = document.querySelector("#message")
 const inputP = document.querySelector("#userPass")
 const inputU = document.querySelector("#username")
 
+const forget = document.querySelector("#already")
+
+forget.addEventListener("click",()=>{
+  window.location.href = "signUpForm.html"
+  show.textContent = "";          // 🧹 Clear any previous messages
+  show.style.display = "none";
+})
+
+
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   const mail = inputU.value;
@@ -31,10 +40,6 @@ form.addEventListener("submit", (e) => {
     window.location.href = "day23SearchFetch.html"
     // window.location.href = ("https://aarambhagg.github.io/PrimeFlix/")     //sathi ko website uslaii khusi garna laako k
   }
-  else if (!email.test(mail)) {
-    show.style.color = "red";
-    show.textContent = "Invalid! Enter Example@gmail.com";
-  }
   else if (!minLength.test(password)) {
     show.style.color = "red";
     show.textContent = "Invalid! Minimum length 8 letters";
@@ -43,6 +48,10 @@ form.addEventListener("submit", (e) => {
     show.style.color = "red";
     show.textContent = "Invalid! One must be uppercase";
   } 
+  else if (!email.test(mail)) {
+    show.style.color = "red";
+    show.textContent = "Invalid! Enter Example@gmail.com";
+  }
   else {
   }
 })

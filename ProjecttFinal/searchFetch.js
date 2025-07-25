@@ -48,7 +48,7 @@ form.addEventListener("submit", async (e) => {
                 <div class="movieCard">
                     <img src="${movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/150'}" alt="Movie Poster">
                     <h4>${movie.Title}</h4>
-                    <p>Year: ${movie.Year}<br> Type: ${movie.Type}<br> Rating: ${movie.imdbRating}</p>
+                    <p>Year: ${movie.Year}<br> Type: ${movie.Type}</p>
                 </div>
             `;
             }).join('');

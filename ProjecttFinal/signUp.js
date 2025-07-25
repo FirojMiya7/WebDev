@@ -4,6 +4,15 @@ const inputP = document.querySelector("#userPass")
 const confirmPass = document.querySelector("#confirmPass")
 const inputU = document.querySelector("#username")
 
+const login = document.querySelector("#loginma")
+
+login.addEventListener("click",()=>{
+  window.location.href="checkform23.html"
+  show.textContent = "";          // 🧹 Clear any previous messages
+  show.style.display = "none";
+
+})
+
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   const mail = inputU.value;
